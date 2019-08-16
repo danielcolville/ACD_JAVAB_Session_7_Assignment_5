@@ -1,4 +1,4 @@
-package session8;
+package session7;
 
 public class EmailThread  extends Thread{
 	String msg;
@@ -15,7 +15,6 @@ public class EmailThread  extends Thread{
 		}
 		System.out.println("Sending email notification which reads:");
 		System.out.println(msg);
-		PrintToFileThread p1=new PrintToFileThread(msg+"\n");
-		p1.start();
+
 	}
 }

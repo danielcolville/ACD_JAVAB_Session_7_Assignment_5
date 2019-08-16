@@ -1,10 +1,9 @@
-package session8;
+package session7;
 
 public class wdThread extends Thread {
 	double amount;
 	double bal;
 	public wdThread(double amount,double bal) {
-	// TODO Auto-generated constructor stub
 		this.amount=amount;
 		this.bal=bal;
 	}

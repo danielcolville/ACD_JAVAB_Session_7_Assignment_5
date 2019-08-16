@@ -1,4 +1,4 @@
-package session8;
+package session7;
 
 public class SmsThread extends Thread {
 	String msg;
@@ -14,7 +14,6 @@ public class SmsThread extends Thread {
 		}
 		System.out.println("Sending SMS notification which reads:");
 		System.out.println(msg);
-		PrintToFileThread p1=new PrintToFileThread(msg+"\n");
-		p1.start();
+	
 	}
 }
