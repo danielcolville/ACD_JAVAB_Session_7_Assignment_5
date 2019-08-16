@@ -17,6 +17,12 @@ public class WriteFile extends Thread{
 		 this.out=out;
 	}
 	public void run() {
+		try {
+			Thread.sleep(10000);
+		} catch (InterruptedException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
 		File f=new File(filename);
 		if(!f.exists()) {
 			try {
