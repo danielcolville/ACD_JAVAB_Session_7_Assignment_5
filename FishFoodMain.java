@@ -13,48 +13,48 @@ public class FishFoodMain {
 				twoThread tw=new twoThread();
 				tw.start();
 				synchronized(tw) {
-				try {
-					tw.wait();
-				}
-				catch(InterruptedException e) {
-					e.printStackTrace();
-				}
+					try {
+						tw.wait();
+					}
+					catch(InterruptedException e) {
+						e.printStackTrace();
+					}
 				}
 			}
 			else if(i%3==0) {
 				threeThread th=new threeThread();
 				th.start();
 				synchronized(th) {
-				try {
-					th.wait();
-				}
-				catch(InterruptedException e) {
-					e.printStackTrace();
-				}
+					try {
+						th.wait();
+					}
+					catch(InterruptedException e) {
+						e.printStackTrace();
+					}
 				}
 			}
 			else if(i%5==0) {
 				fiveThread fv=new fiveThread();
 				fv.start();
 				synchronized(fv) {
-				try {
-					fv.wait();
-				}
-				catch(InterruptedException e) {
-					e.printStackTrace();
-				}
+					try {
+						fv.wait();
+					}
+					catch(InterruptedException e) {
+						e.printStackTrace();
+					}
 				}
 			}
 			else {
 				numThread nm=new numThread(i);
 				nm.start();
 				synchronized(nm) {
-				try {
-					nm.wait();
-				}
-				catch(InterruptedException e) {
-					e.printStackTrace();
-				}
+					try {
+						nm.wait();
+					}
+					catch(InterruptedException e) {
+						e.printStackTrace();
+					}
 				}
 			}
 		}
